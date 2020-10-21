@@ -1,23 +1,23 @@
 var button = document.getElementById("button");
 button.addEventListener("click", changeTitle);
 
-var list = document
-  .getElementById("list")
-  .getElementsByTagName("li")
+var list = document.getElementById("list");
+var contents = list.getElementsByTagName("li");
 
-// for (let i = 0; i < list.length; i++) {
-//   list[i];
-// }
-console.log(list);
-for (let i = 0; i < list.length; i++) {
-  list[i].addEventListener("click", changeBullet)
+console.log(contents[0]);
+
+for (let i = 0; i < contents.length; i++) {
+    contents[i].addEventListener("")
 }
 
-function changeBullet(params) {
-  for (let i = 0; i < list.length; i++) {
-    list[i].classList.remove("active")
-  }
-  this.classList.add("active")
-}
+/*
+  0: li
+  1: li
+  2: li
+  3: li
+  4: li
+*/
 
-function changeTitle() {}
+function changeTitle() {
+  alert("Hello, world!");
+}
